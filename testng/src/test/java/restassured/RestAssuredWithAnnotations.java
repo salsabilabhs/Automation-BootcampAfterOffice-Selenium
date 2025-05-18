@@ -76,7 +76,7 @@ public class RestAssuredWithAnnotations {
         
         String bodyRegister = "{"
                         + "\"email\": \"salsabilabhs112@gmail.com\","
-                        + "\"full_name\": \"Salsabila Bahhas 10\","
+                        + "\"full_name\": \"Salsabila Bahhas 112\","
                         + "\"password\": \"l@l@12345\","
                         + "\"department\": \"branch manager\","
                         + "\"phone_number\": \"08123456789\""
@@ -93,7 +93,7 @@ public class RestAssuredWithAnnotations {
 
             assert response.statusCode() == 200 : "Expected status code 200, but got " + response.statusCode();
             assert response.jsonPath().getString("email").equals("salsabilabhs112@gmail.com") : "Expected email salsabilabhs112@gmail.com, but got " + response.jsonPath().getString("email");
-            assert response.jsonPath().getString("full_name").equals("Salsabila Bahhas 10") : "Expected full name Salsabila Bahhas 10, but got " + response.jsonPath().getString("full_name");
+            assert response.jsonPath().getString("full_name").equals("Salsabila Bahhas 112") : "Expected full name Salsabila Bahhas 112, but got " + response.jsonPath().getString("full_name");
             assert response.jsonPath().getString("department").equals("branch manager") : "Expected department branch manager, but got " + response.jsonPath().getString("department");
             assert response.jsonPath().getString("phone_number").equals("08123456789") : "Expected phone number 08123456789, but got " + response.jsonPath().getString("phone_number");
 
