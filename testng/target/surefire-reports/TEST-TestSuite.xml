@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="1.179" tests="8" errors="0" skipped="2" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.9.9\boot\plexus-classworlds-2.8.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.9.9/conf"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.9.9"/>
+    <property name="surefire.test.class.path" value="C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\target\test-classes;C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\target\classes;C:\Users\Maxxi\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Maxxi\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Maxxi\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Maxxi\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Maxxi"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Maxxi\maven-project\afteroffice-selenium\testng"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="Owner"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Maxxi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Maxxi\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\Maxxi\maven-project\afteroffice-selenium\testng"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Maxxi\maven-project\afteroffice-selenium\testng"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Maxxi\webdriver;C:\Users\Maxxi\AppData\Local\Android\Sdk\platform-tools;D:\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\apache-maven-3.9.9\bin;C:\Users\Maxxi\AppData\Local\Microsoft\WindowsApps;C:\Users\Maxxi\AppData\Roaming\npm;C:\Users\Maxxi\AppData\Local\Programs\Microsoft VS Code\bin;;c:\Users\Maxxi\.vscode\extensions\ms-python.debugpy-2025.8.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\Maxxi\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Maxxi\.vscode\extensions\d-biehl.robotcode-1.2.0\bundled\scripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.9.9\bin\m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.9.9\lib\jansi-native"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testMethod[data1, 1](1)" classname="testng.DataProviderTest" time="0.004">
+    <system-out><![CDATA[Setting up the Suite...
+Before Test method...
+Data: data1, Number: 1
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testMethod[data2, 2](2)" classname="testng.DataProviderTest" time="0.003">
+    <system-out><![CDATA[Data: data2, Number: 2
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod[data3, 3](3)" classname="testng.DataProviderTest" time="0.0">
+    <system-out><![CDATA[Data: data3, Number: 3
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="testng.SimpleTest" time="0.0">
+    <system-out><![CDATA[Before Class method...
+Before Method...
+Running Simple method 1
+]]></system-out>
+  </testcase>
+  <testcase name="testMethod" classname="testng.AssertTest" time="0.006">
+    <system-out><![CDATA[After Method...
+After Class method...
+]]></system-out>
+  </testcase>
+  <testcase name="flackyTest" classname="testng.RetryTest" time="0.0">
+    <skipped message="expected [true] but found [false]"/>
+    <system-out><![CDATA[Running test method 1
+Retrying test flackyTest for the 1 time.
+]]></system-out>
+  </testcase>
+  <testcase name="flackyTest" classname="testng.RetryTest" time="0.0">
+    <skipped message="expected [true] but found [false]"/>
+    <system-out><![CDATA[Running test method 2
+Retrying test flackyTest for the 2 time.
+]]></system-out>
+  </testcase>
+  <testcase name="flackyTest" classname="testng.RetryTest" time="0.0">
+    <system-out><![CDATA[Running test method 3
+]]></system-out>
+  </testcase>
+</testsuite>
