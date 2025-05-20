@@ -2,34 +2,35 @@
 
 # WEEK 1 - API Testing with Rest Assured
 1. How do I set up the test?
-    Copy the RestAssured script from the Maven Repository
-    Add it as a dependency in the pom.xml file
-    Create a RestAssured folder to store the Java API Testing test files
+    - Copy the RestAssured script from the Maven Repository
+    - Add it as a dependency in the pom.xml file
+    - Create a RestAssured folder to store the Java API Testing test files
 2. How do I run the test?
-    Click the "play" icon on the API Testing test class to compile
+    - Click the "play" icon on the API Testing test class to compile
+    - See the DEBUG CONSOLE & TEST RESULTS
 3. TestNG Annotations that I used;
-    @BeforeSuite - dijalankan sekali sebelum semua test dimulai
-    @BeforeMethod – dijalankan sekali sebelum test di class tersebut
-    @Test – method yang menandakan sebuah test case
-    @AfterSuite – dijalankan setelah semua test selesai
-    @Test(dependsOnMethods = {...}) – untuk membuat dependency antar test agar urutan eksekusi logis
-    Priority
+    - @BeforeSuite - dijalankan sekali sebelum semua test dimulai
+    - @BeforeMethod – dijalankan sekali sebelum test di class tersebut
+    - @Test – method yang menandakan sebuah test case
+    - @AfterSuite – dijalankan setelah semua test selesai
+    - @Test(dependsOnMethods = {...}) – untuk membuat dependency antar test agar urutan eksekusi logis
+    - Priority
 4. Tested Features (Explanation):
-    Login API (testAPILogin_Positive & testAPILogin_Negative)
-    Register API (testAPIRegister_Positive & testAPIRegister_Negative)
-    Add Object (testAPIAddObject)
-    Update Object (testAPIUpdateObject)
-    Partially Update Object (testAPIPartiallyUpdateObject)
-    Get Single Object by ID (testAPIGetSingleObject_Positive)
-    Get All Departments (testAPIGetAllDepartment)
-    Get List of Objects by IDs (testAPIGetListOfObjectsByIds)
-    Get All Objects (testAPIGetAllObject)
-    Delete Object(testAPIDeleteObject_Positive & testAPIDeleteObject_Negative)
+    - Login API (testAPILogin_Positive & testAPILogin_Negative)
+    - Register API (testAPIRegister_Positive & testAPIRegister_Negative)
+    - Add Object (testAPIAddObject)
+    - Update Object (testAPIUpdateObject)
+    - Partially Update Object (testAPIPartiallyUpdateObject)
+    - Get Single Object by ID (testAPIGetSingleObject_Positive)
+    - Get All Departments (testAPIGetAllDepartment)
+    - Get List of Objects by IDs (testAPIGetListOfObjectsByIds)
+    - Get All Objects (testAPIGetAllObject)
+    - Delete Object(testAPIDeleteObject_Positive & testAPIDeleteObject_Negative)
 
 5. Example Command:
     A. Implementation using DependsonMethod;
     
-    @Test(dependsOnMethods = {"testAPILogin_Positive", "testAPIAddObject", "testAPIUpdateObject", "testAPIPartiallyUpdateObject", "testAPIGetSingleObject_Positive"})
+    ```@Test(dependsOnMethods = {"testAPILogin_Positive", "testAPIAddObject", "testAPIUpdateObject", "testAPIPartiallyUpdateObject", "testAPIGetSingleObject_Positive"})
     public void testAPIDeleteObject_Positive() {
         RestAssured.baseURI = "https://whitesmokehouse.com";
 
@@ -50,9 +51,11 @@
         System.out.println("Object with ID " + id + " has been deleted successfully.");
         System.out.println("Response: " + response.asPrettyString());
     }
+    ```
 
     B. Implementation using TestNG Annotations;
     
+    ```
     @AfterSuite
     public void testAPILogin_Negative() {
 
@@ -78,4 +81,5 @@
         
         System.out.println("Response: " + response.asPrettyString());
     }
+    ```
  
