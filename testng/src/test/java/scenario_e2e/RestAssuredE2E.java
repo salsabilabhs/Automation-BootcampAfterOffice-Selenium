@@ -1,6 +1,7 @@
 package scenario_e2e;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -13,9 +14,14 @@ public class RestAssuredE2E {
     String tokenLogin;
     int objectId;
 
+    @BeforeClass
+        public void setUpClass() {
+        // Set up the base URL for RestAssured
+        RestAssured.baseURI = base_url;
+        }
+
     @BeforeMethod
     public void setUp() {
-        RestAssured.baseURI = base_url;
 
         String jsonLogin = "{\n"
                     + "  \"email\": \"sulistyo_11@gmail.com\",\n"
@@ -44,10 +50,9 @@ public class RestAssuredE2E {
 
     @Test
     public void registerUserScenario() {
-        RestAssured.baseURI = base_url;
 
         String bodyRegisterUser = "{\n" +
-                            "    \"email\": \"sulistyo_13@gmail.com\",\n" +
+                            "    \"email\": \"sulistyo_14@gmail.com\",\n" +
                             "    \"full_name\": \"Sulistyo Hamidar\",\n" +
                             "    \"password\": \"t@st12345\",\n" +
                             "    \"department\": \"Finance\",\n" +
@@ -64,8 +69,8 @@ public class RestAssuredE2E {
         Assert.assertEquals(responseRegisterUser.getStatusCode(), 200, 
             "Expected status code 200, but got " + responseRegisterUser.statusCode());
         Assert.assertNotNull(responseRegisterUser.jsonPath().get("id"), "'id' is null");
-        Assert.assertEquals(responseRegisterUser.jsonPath().getString("email"), "sulistyo_13@gmail.com",
-            "Expected email sulistyo_13@gmail.com, but got " + responseRegisterUser.jsonPath().getString("email"));
+        Assert.assertEquals(responseRegisterUser.jsonPath().getString("email"), "sulistyo_14@gmail.com",
+            "Expected email sulistyo_14@gmail.com, but got " + responseRegisterUser.jsonPath().getString("email"));
         Assert.assertEquals(responseRegisterUser.jsonPath().getString("full_name"), "Sulistyo Hamidar", 
             "Expected full_name Sulistyo Hamidar, but got " + responseRegisterUser.jsonPath().getString("full_name"));
         Assert.assertEquals(responseRegisterUser.jsonPath().getString("department"), "Finance",
@@ -80,7 +85,7 @@ public class RestAssuredE2E {
 
 
         String jsonLogin = "{\n"
-                            + "  \"email\": \"sulistyo_13@gmail.com\",\n"
+                            + "  \"email\": \"sulistyo_14@gmail.com\",\n"
                             + "  \"password\": \"t@st12345\"\n"
                             + "}";
         
@@ -123,7 +128,6 @@ public class RestAssuredE2E {
 
     @Test
     public void addObjectScenario() {
-        RestAssured.baseURI = base_url;
 
         String bodyAddObject =   "{\n"
                             + "  \"name\": \"Samsung A53 5G\",\n"
@@ -247,7 +251,6 @@ public class RestAssuredE2E {
 
     @Test
     public void deleteObjectScenario() {
-        RestAssured.baseURI = base_url;
 
         Response responseDeleteObject = RestAssured.given()
             .header("Content-Type", "application/json")

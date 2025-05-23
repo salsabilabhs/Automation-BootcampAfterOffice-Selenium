@@ -1,5 +1,7 @@
 package restassured;
 
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertNotNull;
 
@@ -11,11 +13,15 @@ public class RestAssuredImplement {
         String token;
         Integer id;
 
+    @BeforeMethod
+    public void setUp() {
+        // Set up any necessary preconditions or configurations here
+        // For example, you can set the base URI for RestAssured
+        RestAssured.baseURI = "https://whitesmokehouse.com";
+    }
+
     @Test
     public void testAPILogin_Positive() {
-
-        // Set the base URI for the REST API
-        RestAssured.baseURI = "https://whitesmokehouse.com";
 
         String responseBody = "{\n"
                             + "  \"email\": \"salsabilabhs@gmail.com\",\n"
@@ -44,8 +50,6 @@ public class RestAssuredImplement {
     @Test
     public void testAPILogin_Negative() {
 
-        RestAssured.baseURI = "https://whitesmokehouse.com";
-
         String responseBody = "{\n"
                         + "    \"email\": \"salsabilabhs1@gmail.com\",\n" 
                         + "    \"password\": \"l@l@12347\"\n" 
@@ -65,9 +69,8 @@ public class RestAssuredImplement {
         System.out.println("Response: " + response.asPrettyString());
     }
 
-    @Test(dependsOnMethods = "testAPILogin_Positive")
+    @Test
     public void testAPIRegister_Positive() {
-        RestAssured.baseURI = "https://whitesmokehouse.com";
         
         String bodyRegister = "{"
                         + "\"email\": \"salsabilabhs25@gmail.com\","
@@ -95,9 +98,8 @@ public class RestAssuredImplement {
             System.out.println("Response: " + response.asPrettyString());
     }
 
-    @Test(dependsOnMethods = "testAPILogin_Positive")
+    @Test
     public void testAPIRegister_Negative() {
-        RestAssured.baseURI = "https://whitesmokehouse.com";
         
         String bodyRegister = "{"
                         + "\"email\": \"salsabilabhs@gmail.com\","
@@ -125,7 +127,6 @@ public class RestAssuredImplement {
 
     @Test(dependsOnMethods = "testAPILogin_Positive")
     public void testAPIAddObject() {
-        RestAssured.baseURI = "https://whitesmokehouse.com";
         
         String bodyAddObject =   "{\n"
                             + "  \"name\": \"Tab Galaxy S10\",\n"
@@ -167,9 +168,8 @@ public class RestAssuredImplement {
 
     }
 
-    @Test(dependsOnMethods = {"testAPILogin_Positive" , "testAPIAddObject"})
+    @Test(dependsOnMethods = "testAPILogin_Positive", priority = 1)
     public void testAPIUpdateObject() {
-        RestAssured.baseURI = "https://whitesmokehouse.com";
         
         String bodyUpdateObject = "{\n" +
                         "  \"name\": \"Samsung Flip 17\",\n" +
@@ -209,10 +209,9 @@ public class RestAssuredImplement {
         System.out.println("Response: " + response.asPrettyString());
     }
 
-    @Test(dependsOnMethods = {"testAPILogin_Positive" , "testAPIAddObject"})
+    @Test(dependsOnMethods = "testAPILogin_Positive" , priority = 2)
     public void testAPIPartiallyUpdateObject() {
-        RestAssured.baseURI = "https://whitesmokehouse.com";
-
+        
         String bodyPartialUpdate = "{\n"
                         + "  \"name\": \"[PROMO] Galaxy S10\",\n"
                         + "  \"year\": \"2030\"\n"
@@ -243,10 +242,9 @@ public class RestAssuredImplement {
         System.out.println("Response: " + response.asPrettyString());
     }
 
-    @Test(dependsOnMethods = "testAPILogin_Positive")
+    @Test(dependsOnMethods = "testAPILogin_Positive", priority = 3)
     public void testAPIGetAllDepartment() {
-        RestAssured.baseURI = "https://whitesmokehouse.com";
-
+        
         Response response = RestAssured.given()
             .header("Content-Type", "application/json")
             // Passing token dari APILogin ke API Get All Department
@@ -268,10 +266,9 @@ public class RestAssuredImplement {
         System.out.println("Response: " + response.asPrettyString());
     }
 
-    @Test(dependsOnMethods = {"testAPILogin_Positive", "testAPIAddObject", "testAPIUpdateObject", "testAPIPartiallyUpdateObject", "testAPIGetSingleObject_Positive"})
+    @Test(dependsOnMethods = "testAPILogin_Positive", priority = 7)
     public void testAPIDeleteObject_Positive() {
-        RestAssured.baseURI = "https://whitesmokehouse.com";
-
+        
         Response response = RestAssured.given()
             .header("Content-Type", "application/json")
             // Passing token dari APILogin ke API Delete Object
@@ -290,10 +287,9 @@ public class RestAssuredImplement {
         System.out.println("Response: " + response.asPrettyString());
     }
 
-    @Test(dependsOnMethods = {"testAPILogin_Positive", "testAPIAddObject", "testAPIDeleteObject_Positive"})
+    @Test(dependsOnMethods = "testAPILogin_Positive", priority = 8)
     public void testAPIDeleteObject_Negative() {
-        RestAssured.baseURI = "https://whitesmokehouse.com";
-
+        
         Response response = RestAssured.given()
             .header("Content-Type", "application/json")
             // Passing token dari APILogin ke API Delete Object
@@ -312,10 +308,9 @@ public class RestAssuredImplement {
         System.out.println("Response: " + response.asPrettyString());
     }
 
-    @Test(dependsOnMethods = {"testAPILogin_Positive", "testAPIAddObject"})
+    @Test(dependsOnMethods = "testAPILogin_Positive", priority = 4)
     public void testAPIGetSingleObject_Positive() {
-        RestAssured.baseURI = "https://whitesmokehouse.com";
-
+        
         Response response = RestAssured.given()
             .header("Content-Type", "application/json")
             // Passing token dari APILogin ke API Get Single Object
@@ -341,10 +336,9 @@ public class RestAssuredImplement {
         System.out.println("Response: " + response.asPrettyString());
     }
 
-    @Test(dependsOnMethods = "testAPILogin_Positive")
+    @Test(dependsOnMethods = "testAPILogin_Positive", priority = 5)
     public void testAPIGetListOfObjectsByIds() {
-        RestAssured.baseURI = "https://whitesmokehouse.com";
-
+        
         Response response = RestAssured.given()
             .header("Content-Type", "application/json")
             // Passing token dari APILogin ke API Get List of Objects by IDs
@@ -372,10 +366,8 @@ public class RestAssuredImplement {
         }
     }
 
-    @Test(dependsOnMethods = "testAPILogin_Positive")
+    @Test(dependsOnMethods = "testAPILogin_Positive", priority = 6)
     public void testAPIGetAllObject() {
-
-        RestAssured.baseURI = "https://whitesmokehouse.com";
 
         Response response = RestAssured.given()
             .header("Content-Type", "application/json")
