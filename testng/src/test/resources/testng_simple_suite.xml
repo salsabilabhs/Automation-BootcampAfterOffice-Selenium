@@ -4,10 +4,12 @@
   <test name="SimpleRegression">
     <classes>
     <!-- nama folder.nama file -->
-      <class name="testng.DataProviderTest"/>
+      <!-- <class name="testng.DataProviderTest"/>
       <class name="testng.SimpleTest"/>
       <class name="testng.AssertTest"/>
-      <class name="testng.RetryTest"/>
+      <class name="testng.RetryTest"/> -->
+      <class name="scenario_e2e.pojo.PojoRegisterUserE2E"/>
+      <class name="scenario_e2e.pojo.PojoAddObjectE2E"/>
    </classes>
  </test>
 </suite>
