@@ -3,11 +3,28 @@
 <suite name="Failed suite [SimpleSuite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="SimpleRegression(failed)" verbose="0">
     <classes>
-      <class name="testng.AssertTest">
+      <class name="scenario_e2e.pojo.PojoAddObjectE2E">
         <methods>
-          <include name="testMethod"/>
+          <include name="getListObjectbyId"/>
+          <include name="getSingleObject"/>
+          <include name="addObject"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- testng.AssertTest -->
+      </class> <!-- scenario_e2e.pojo.PojoAddObjectE2E -->
+      <class name="scenario_e2e.pojo.PojoDeleteObjectE2E">
+        <methods>
+          <include name="deleteObject"/>
+          <include name="getListObjectbyId"/>
+          <include name="getSingleObject"/>
+        </methods>
+      </class> <!-- scenario_e2e.pojo.PojoDeleteObjectE2E -->
+      <class name="scenario_e2e.pojo.PojoRegisterUserE2E">
+        <methods>
+          <include name="RegisterUser"/>
+          <include name="setUp"/>
+          <include name="LoginUser"/>
+        </methods>
+      </class> <!-- scenario_e2e.pojo.PojoRegisterUserE2E -->
     </classes>
   </test> <!-- SimpleRegression(failed) -->
 </suite> <!-- Failed suite [SimpleSuite] -->

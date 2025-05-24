@@ -1,279 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="8" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-14T04:50:39 WIB" name="SimpleSuite" finished-at="2025-05-14T04:50:39 WIB" duration-ms="171">
+  <suite started-at="2025-05-24T17:49:05 WIB" name="SimpleSuite" finished-at="2025-05-24T17:49:15 WIB" duration-ms="9132">
     <groups>
+      <group name="LoginGroup">
+        <method signature="PojoRegisterUserE2E.LoginUser()[pri:0, instance:scenario_e2e.pojo.PojoRegisterUserE2E@65514add]" name="LoginUser" class="scenario_e2e.pojo.PojoRegisterUserE2E"/>
+      </group> <!-- LoginGroup -->
+      <group name="assertAddObject">
+        <method signature="PojoAddObjectE2E.getListObjectbyId()[pri:1, instance:scenario_e2e.pojo.PojoAddObjectE2E@26865482]" name="getListObjectbyId" class="scenario_e2e.pojo.PojoAddObjectE2E"/>
+        <method signature="PojoAddObjectE2E.getSingleObject()[pri:2, instance:scenario_e2e.pojo.PojoAddObjectE2E@26865482]" name="getSingleObject" class="scenario_e2e.pojo.PojoAddObjectE2E"/>
+      </group> <!-- assertAddObject -->
     </groups>
-    <test started-at="2025-05-14T04:50:39 WIB" name="SimpleRegression" finished-at="2025-05-14T04:50:39 WIB" duration-ms="171">
-      <class name="testng.RetryTest">
-        <test-method retried="true" signature="flackyTest()[pri:0, instance:testng.RetryTest@17229821]" started-at="2025-05-14T04:50:39 WIB" name="flackyTest" finished-at="2025-05-14T04:50:39 WIB" duration-ms="17" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at testng.RetryTest.flackyTest(RetryTest.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:137)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:148)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:88)
-at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:91)
-at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1308)
-at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1135)
-at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:969)
-at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
-at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
-at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
-at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
-at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
-at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
-at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
-at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
-at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
-at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
-at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
-at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
-at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
-at org.apache.maven.cli.MavenCli.execute(MavenCli.java:906)
-at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
-at org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
-at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
-at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
-at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2025-05-24T17:49:05 WIB" name="SimpleRegression" finished-at="2025-05-24T17:49:15 WIB" duration-ms="9132">
+      <class name="scenario_e2e.pojo.PojoDeleteObjectE2E">
+        <test-method signature="deleteObject()[pri:0, instance:scenario_e2e.pojo.PojoDeleteObjectE2E@34451ed8]" started-at="2025-05-24T17:49:13 WIB" name="deleteObject" depends-on-groups="assertAddObject" finished-at="2025-05-24T17:49:13 WIB" duration-ms="666" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flackyTest -->
-        <test-method retried="true" signature="flackyTest()[pri:0, instance:testng.RetryTest@17229821]" started-at="2025-05-14T04:50:39 WIB" name="flackyTest" finished-at="2025-05-14T04:50:39 WIB" duration-ms="7" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at testng.RetryTest.flackyTest(RetryTest.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:137)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:148)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:88)
-at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:91)
-at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1308)
-at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1135)
-at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:969)
-at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
-at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
-at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
-at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
-at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
-at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
-at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
-at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
-at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
-at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
-at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
-at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
-at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
-at org.apache.maven.cli.MavenCli.execute(MavenCli.java:906)
-at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
-at org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
-at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
-at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
-at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- deleteObject -->
+        <test-method signature="getListObjectbyId()[pri:0, instance:scenario_e2e.pojo.PojoDeleteObjectE2E@34451ed8]" started-at="2025-05-24T17:49:13 WIB" name="getListObjectbyId" finished-at="2025-05-24T17:49:14 WIB" depends-on-methods="scenario_e2e.pojo.PojoDeleteObjectE2E.deleteObject" duration-ms="651" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flackyTest -->
-        <test-method signature="flackyTest()[pri:0, instance:testng.RetryTest@17229821]" started-at="2025-05-14T04:50:39 WIB" name="flackyTest" finished-at="2025-05-14T04:50:39 WIB" duration-ms="3" status="PASS">
+        </test-method> <!-- getListObjectbyId -->
+        <test-method signature="getSingleObject()[pri:1, instance:scenario_e2e.pojo.PojoDeleteObjectE2E@34451ed8]" started-at="2025-05-24T17:49:14 WIB" name="getSingleObject" finished-at="2025-05-24T17:49:15 WIB" depends-on-methods="scenario_e2e.pojo.PojoDeleteObjectE2E.deleteObject" duration-ms="648" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flackyTest -->
-      </class> <!-- testng.RetryTest -->
-      <class name="testng.SimpleTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testng.SimpleTest@5af64ce0]" started-at="2025-05-14T04:50:39 WIB" name="setUp" finished-at="2025-05-14T04:50:39 WIB" duration-ms="29" status="PASS">
+        </test-method> <!-- getSingleObject -->
+      </class> <!-- scenario_e2e.pojo.PojoDeleteObjectE2E -->
+      <class name="scenario_e2e.pojo.PojoAddObjectE2E">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenario_e2e.pojo.PojoAddObjectE2E@26865482]" started-at="2025-05-24T17:49:10 WIB" name="setUp" finished-at="2025-05-24T17:49:10 WIB" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testng.SimpleTest@5af64ce0]" started-at="2025-05-14T04:50:39 WIB" name="beforeTest" finished-at="2025-05-14T04:50:39 WIB" duration-ms="0" status="PASS">
+        <test-method signature="addObject()[pri:0, instance:scenario_e2e.pojo.PojoAddObjectE2E@26865482]" started-at="2025-05-24T17:49:10 WIB" name="addObject" depends-on-groups="LoginGroup" finished-at="2025-05-24T17:49:11 WIB" duration-ms="1484" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testng.SimpleTest@5af64ce0]" started-at="2025-05-14T04:50:39 WIB" name="beforeClass" finished-at="2025-05-14T04:50:39 WIB" duration-ms="5" status="PASS">
+        </test-method> <!-- addObject -->
+        <test-method signature="getListObjectbyId()[pri:1, instance:scenario_e2e.pojo.PojoAddObjectE2E@26865482]" started-at="2025-05-24T17:49:11 WIB" name="getListObjectbyId" finished-at="2025-05-24T17:49:12 WIB" depends-on-methods="scenario_e2e.pojo.PojoAddObjectE2E.addObject" duration-ms="733" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="testMethod()[pri:0, instance:testng.SimpleTest@5af64ce0]" started-at="2025-05-14T04:50:39 WIB" name="testMethod" finished-at="2025-05-14T04:50:39 WIB" duration-ms="0" status="PASS">
+        </test-method> <!-- getListObjectbyId -->
+        <test-method signature="getSingleObject()[pri:2, instance:scenario_e2e.pojo.PojoAddObjectE2E@26865482]" started-at="2025-05-24T17:49:12 WIB" name="getSingleObject" finished-at="2025-05-24T17:49:13 WIB" depends-on-methods="scenario_e2e.pojo.PojoAddObjectE2E.getListObjectbyId" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testng.SimpleTest@5af64ce0]" started-at="2025-05-14T04:50:39 WIB" name="beforeMethod" finished-at="2025-05-14T04:50:39 WIB" duration-ms="0" status="PASS">
+        </test-method> <!-- getSingleObject -->
+      </class> <!-- scenario_e2e.pojo.PojoAddObjectE2E -->
+      <class name="scenario_e2e.pojo.PojoRegisterUserE2E">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenario_e2e.pojo.PojoRegisterUserE2E@65514add]" started-at="2025-05-24T17:49:05 WIB" name="setUp" finished-at="2025-05-24T17:49:05 WIB" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.SimpleTest@5af64ce0]" started-at="2025-05-14T04:50:39 WIB" name="afterMethod" finished-at="2025-05-14T04:50:39 WIB" duration-ms="0" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="RegisterUser()[pri:0, instance:scenario_e2e.pojo.PojoRegisterUserE2E@65514add]" started-at="2025-05-24T17:49:06 WIB" name="RegisterUser" finished-at="2025-05-24T17:49:09 WIB" duration-ms="3026" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testng.SimpleTest@5af64ce0]" started-at="2025-05-14T04:50:39 WIB" name="afterClass" finished-at="2025-05-14T04:50:39 WIB" duration-ms="2" status="PASS">
+        </test-method> <!-- RegisterUser -->
+        <test-method signature="LoginUser()[pri:0, instance:scenario_e2e.pojo.PojoRegisterUserE2E@65514add]" started-at="2025-05-24T17:49:09 WIB" name="LoginUser" finished-at="2025-05-24T17:49:10 WIB" depends-on-methods="scenario_e2e.pojo.PojoRegisterUserE2E.RegisterUser" duration-ms="1176" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testng.SimpleTest@5af64ce0]" started-at="2025-05-14T04:50:39 WIB" name="afterTest" finished-at="2025-05-14T04:50:39 WIB" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testng.SimpleTest@5af64ce0]" started-at="2025-05-14T04:50:39 WIB" name="tearDown" finished-at="2025-05-14T04:50:39 WIB" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testng.SimpleTest -->
-      <class name="testng.AssertTest">
-        <test-method signature="testMethod()[pri:0, instance:testng.AssertTest@7e7e962d]" started-at="2025-05-14T04:50:39 WIB" name="testMethod" finished-at="2025-05-14T04:50:39 WIB" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod -->
-      </class> <!-- testng.AssertTest -->
-      <class name="testng.DataProviderTest">
-        <test-method signature="testMethod(java.lang.String,int)[pri:0, instance:testng.DataProviderTest@5b39a3e6]" started-at="2025-05-14T04:50:39 WIB" name="testMethod" data-provider="data-provider" finished-at="2025-05-14T04:50:39 WIB" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[data1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod -->
-        <test-method signature="testMethod(java.lang.String,int)[pri:0, instance:testng.DataProviderTest@5b39a3e6]" started-at="2025-05-14T04:50:39 WIB" name="testMethod" data-provider="data-provider" finished-at="2025-05-14T04:50:39 WIB" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[data2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod -->
-        <test-method signature="testMethod(java.lang.String,int)[pri:0, instance:testng.DataProviderTest@5b39a3e6]" started-at="2025-05-14T04:50:39 WIB" name="testMethod" data-provider="data-provider" finished-at="2025-05-14T04:50:39 WIB" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[data3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod -->
-      </class> <!-- testng.DataProviderTest -->
+        </test-method> <!-- LoginUser -->
+      </class> <!-- scenario_e2e.pojo.PojoRegisterUserE2E -->
     </test> <!-- SimpleRegression -->
   </suite> <!-- SimpleSuite -->
 </testng-results>

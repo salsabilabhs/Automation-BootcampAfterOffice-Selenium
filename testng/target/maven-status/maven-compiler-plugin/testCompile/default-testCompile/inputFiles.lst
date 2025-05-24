@@ -1,5 +1,15 @@
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\data\Product.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\restassured\RestAssuredImplement.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\restassured\RestAssuredWithAnnotations.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\retry_mechanism\RetrySample.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\AddObjectE2E.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\DeleteObjectE2E.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\pojo\PojoAddObjectE2E.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\pojo\PojoDeleteObjectE2E.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\pojo\PojoRegisterUserE2E.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\pojo\StaticVar.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\RegisterUserE2E.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\RestAssuredE2E.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\testng\AssertTest.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\testng\DataProviderTest.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\testng\RetryTest.java

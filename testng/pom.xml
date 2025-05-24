@@ -41,6 +41,12 @@
           <artifactId>jackson-databind</artifactId>
           <version>2.19.0</version>
       </dependency>
+      <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>json-schema-validator</artifactId>
+        <version>5.3.2</version>
+        <scope>test</scope>
+      </dependency>
     </dependencies>
 
     <build>
@@ -54,13 +60,13 @@
           <configuration>
             <forkCount>0</forkCount>
             <suiteXmlFiles>
-                <suiteXmlFile>src/test/resources/testng_simple_suite.xml</suiteXmlFile>
+                <suiteXmlFile>${suiteXml}</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
-    <!-- To use the plugin goals in your POM or parent POM -->
+    <!-- To define the plugin version in your child POM -->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
