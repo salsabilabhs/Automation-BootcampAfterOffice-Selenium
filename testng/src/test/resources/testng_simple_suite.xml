@@ -8,8 +8,9 @@
       <class name="testng.SimpleTest"/>
       <class name="testng.AssertTest"/>
       <class name="testng.RetryTest"/> -->
-      <class name="scenario_e2e.pojo.PojoRegisterUserE2E"/>
-      <class name="scenario_e2e.pojo.PojoAddObjectE2E"/>
+      <class name="scenario_e2e.RegisterUserE2E"/>
+      <class name="scenario_e2e.AddObjectE2E"/>
+      <class name="scenario_e2e.DeleteObjectE2E"/>
    </classes>
  </test>
 </suite>

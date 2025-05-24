@@ -9,77 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">SimpleSuite</th></tr>
-<tr><td><a href="#t0">SimpleRegression</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">171</td><td></td><td></td></tr>
+<tr><td><a href="#t0">SimpleRegression</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,132</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SimpleSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SimpleRegression &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">testng.RetryTest</td><td><a href="#m0">flackyTest</a></td><td rowspan="2">1747173039671</td><td rowspan="2">17</td></tr><tr class="retriedeven"><td><a href="#m1">flackyTest</a></td></tr><tr><th colspan="4">SimpleRegression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testng.AssertTest</td><td><a href="#m2">testMethod</a></td><td rowspan="1">1747173039665</td><td rowspan="1">6</td></tr><tr class="passedodd"><td rowspan="3">testng.DataProviderTest</td><td><a href="#m3">testMethod</a></td><td rowspan="3">1747173039614</td><td rowspan="3">7</td></tr><tr class="passedodd"><td><a href="#m4">testMethod</a></td></tr><tr class="passedodd"><td><a href="#m5">testMethod</a></td></tr><tr class="passedeven"><td rowspan="1">testng.RetryTest</td><td><a href="#m6">flackyTest</a></td><td rowspan="1">1747173039696</td><td rowspan="1">3</td></tr><tr class="passedodd"><td rowspan="1">testng.SimpleTest</td><td><a href="#m7">testMethod</a></td><td rowspan="1">1747173039655</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SimpleSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SimpleRegression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">scenario_e2e.pojo.PojoAddObjectE2E</td><td><a href="#m0">addObject</a></td><td rowspan="1">1748083750241</td><td rowspan="1">1484</td></tr><tr class="passedeven"><td><a href="#m1">getListObjectbyId</a></td><td rowspan="1">1748083751728</td><td rowspan="1">733</td></tr><tr class="passedeven"><td><a href="#m2">getSingleObject</a></td><td rowspan="1">1748083752464</td><td rowspan="1">677</td></tr><tr class="passedodd"><td rowspan="3">scenario_e2e.pojo.PojoDeleteObjectE2E</td><td><a href="#m3">deleteObject</a></td><td rowspan="1">1748083753144</td><td rowspan="1">666</td></tr><tr class="passedodd"><td><a href="#m4">getListObjectbyId</a></td><td rowspan="1">1748083753812</td><td rowspan="1">651</td></tr><tr class="passedodd"><td><a href="#m5">getSingleObject</a></td><td rowspan="1">1748083754466</td><td rowspan="1">648</td></tr><tr class="passedeven"><td rowspan="2">scenario_e2e.pojo.PojoRegisterUserE2E</td><td><a href="#m6">LoginUser</a></td><td rowspan="1">1748083749053</td><td rowspan="1">1176</td></tr><tr class="passedeven"><td><a href="#m7">RegisterUser</a></td><td rowspan="1">1748083746019</td><td rowspan="1">3026</td></tr></tbody>
 </table>
-<h2>SimpleRegression</h2><h3 id="m0">testng.RetryTest#flackyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at testng.RetryTest.flackyTest(RetryTest.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:91)
-	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1308)
-	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1135)
-	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:969)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
-	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
-	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:906)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
-... Removed 42 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testng.RetryTest#flackyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at testng.RetryTest.flackyTest(RetryTest.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:91)
-	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1308)
-	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1135)
-	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:969)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
-	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
-	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:906)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
-... Removed 42 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testng.AssertTest#testMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testng.DataProviderTest#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>data1</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testng.DataProviderTest#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>data2</td><td>2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testng.DataProviderTest#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>data3</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testng.RetryTest#flackyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testng.SimpleTest#testMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SimpleRegression</h2><h3 id="m0">scenario_e2e.pojo.PojoAddObjectE2E#addObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">scenario_e2e.pojo.PojoAddObjectE2E#getListObjectbyId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">scenario_e2e.pojo.PojoAddObjectE2E#getSingleObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">scenario_e2e.pojo.PojoDeleteObjectE2E#deleteObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">scenario_e2e.pojo.PojoDeleteObjectE2E#getListObjectbyId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">scenario_e2e.pojo.PojoDeleteObjectE2E#getSingleObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">scenario_e2e.pojo.PojoRegisterUserE2E#LoginUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">scenario_e2e.pojo.PojoRegisterUserE2E#RegisterUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

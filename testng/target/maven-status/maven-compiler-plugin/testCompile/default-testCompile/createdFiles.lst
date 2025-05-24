@@ -1,2 +1,15 @@
+scenario_e2e\AddObjectE2E.class
+data\Product.class
 testng\DataProviderTest.class
+scenario_e2e\DeleteObjectE2E.class
+scenario_e2e\pojo\PojoRegisterUserE2E.class
+restassured\RestAssuredWithAnnotations.class
+testng\AssertTest$1.class
+testng\RetryTest.class
+restassured\RestAssuredImplement.class
+retry_mechanism\RetrySample.class
+testng\AssertTest.class
+scenario_e2e\RestAssuredE2E.class
 testng\SimpleTest.class
+scenario_e2e\RegisterUserE2E.class
+scenario_e2e\pojo\StaticVar.class

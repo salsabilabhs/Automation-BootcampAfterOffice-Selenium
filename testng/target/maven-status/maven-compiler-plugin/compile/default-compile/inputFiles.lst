@@ -1,1 +1,9 @@
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\main\java\com\demo\testng\program\Main.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\main\java\com\demo\testng\program\model\ObjectModel.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\main\java\com\demo\testng\program\model\UserModel.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\main\java\com\demo\testng\program\response_model\AddObjectResponse.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\main\java\com\demo\testng\program\response_model\DeleteObjectResponse.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\main\java\com\demo\testng\program\response_model\GetListObjectByIdResponse.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\main\java\com\demo\testng\program\response_model\GetSingleObjectResponse.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\main\java\com\demo\testng\program\response_model\LoginUserResponse.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\main\java\com\demo\testng\program\response_model\RegisterUserResponse.java
