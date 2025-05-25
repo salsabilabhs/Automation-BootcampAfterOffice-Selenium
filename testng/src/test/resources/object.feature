@@ -1,4 +1,4 @@
-Feature: Managing Object via API with authentication
+Feature: Managing Objects via API with authentication
 As an authenticated user
 I want to add a new object via API
 So that the object is stored in the system
