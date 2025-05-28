@@ -24,7 +24,7 @@ public class UpdateObjectResponse {
         private String year;
 
         @JsonProperty("price")
-        private int price;
+        private Double price;
 
         @JsonProperty("CPU model")
         private String cpuModel;

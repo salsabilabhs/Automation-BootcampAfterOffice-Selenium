@@ -3,6 +3,7 @@ As an authenticated user
 I want to add a new object via API
 So that the object is stored in the system
 
+# Pre-condition Login to have API with authentication
 Background:
     Given I have set the base url "https://whitesmokehouse.com/webhook"
     And Send a http "POST" request to login "/api/login" with body:
