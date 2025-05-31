@@ -64,6 +64,18 @@
       <artifactId>cucumber-reporting</artifactId>
       <version>5.7.0</version> <!-- versi terbaru per 2025 bisa kamu cek di Maven Central -->
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.github.cdimascio/dotenv-java -->
+    <dependency>
+        <groupId>io.github.cdimascio</groupId>
+        <artifactId>dotenv-java</artifactId>
+        <version>3.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-picocontainer</artifactId>
+      <version>7.22.2</version>
+      <scope>test</scope>
+  </dependency>
     </dependencies>
 
 <build>

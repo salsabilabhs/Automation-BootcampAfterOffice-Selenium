@@ -3,6 +3,7 @@ As an authenticated user
 I want to update an object via API
 So that the object is updated in the system
 
+@withLogin
 Scenario: Update an existing Object with valid data
     When I send "PUT" request to "/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/" with body:
     """

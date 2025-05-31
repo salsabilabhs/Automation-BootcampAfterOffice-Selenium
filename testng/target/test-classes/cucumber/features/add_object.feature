@@ -3,6 +3,7 @@ As an authenticated user
 I want to add a new object via API
 So that the object is stored in the system
 
+@withLogin
 Scenario: Add a new Object with valid data
 When I send "POST" request to "/api/objects" with body:
 """
