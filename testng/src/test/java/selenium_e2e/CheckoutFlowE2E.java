@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -225,6 +226,14 @@ public class CheckoutFlowE2E {
         Assert.assertEquals(actualProductName, productName, "Product name user ordered does not match the added product name.");
         Assert.assertEquals(actualProductPrice, productPrice, "Product price user ordered does not match the added product price.");
 
+    }
+
+    @AfterSuite
+    public void closeBrowser() {
+        webDriver.close();
+        System.out.println("Browser closed.");
+
+        webDriver.quit();
     }
     
 }
