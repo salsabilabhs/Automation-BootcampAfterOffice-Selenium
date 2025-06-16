@@ -1,95 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-31T11:55:06 WIB" name="CucumberSuite" finished-at="2025-05-31T11:55:16 WIB" duration-ms="10069">
+  <suite started-at="2025-06-16T17:07:36 WIB" name="SeleniumSuite" finished-at="2025-06-16T17:07:58 WIB" duration-ms="22000">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.runners.CucumberRunner@5b251fb9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-05-31T11:55:06 WIB" name="Cucumber" finished-at="2025-05-31T11:55:16 WIB" duration-ms="10069">
-      <class name="cucumber.runners.CucumberRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.runners.CucumberRunner@5b251fb9]" started-at="2025-05-31T11:55:06 WIB" name="setUpClass" finished-at="2025-05-31T11:55:06 WIB" duration-ms="616" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@781aff8b]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-06-16T17:07:36 WIB" name="SeleniumSuite" finished-at="2025-06-16T17:07:58 WIB" duration-ms="22000">
+      <class name="selenium_e2e.CheckoutFlowE2E">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:32 WIB" name="startBrowser" finished-at="2025-06-16T17:07:36 WIB" duration-ms="4389" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.runners.CucumberRunner@5b251fb9]" started-at="2025-05-31T11:55:06 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-31T11:55:10 WIB" duration-ms="3995" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Add a new Object with valid data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Add Object via API with authentication"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="loginToPlatform()[pri:0, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:36 WIB" name="loginToPlatform" finished-at="2025-06-16T17:07:37 WIB" duration-ms="1172" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.runners.CucumberRunner@5b251fb9]" started-at="2025-05-31T11:55:10 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-31T11:55:13 WIB" duration-ms="2582" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Delete an existing object"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Delete Object via API with authentication"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- loginToPlatform -->
+        <test-method signature="searchProduct()[pri:2, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:37 WIB" name="searchProduct" finished-at="2025-06-16T17:07:44 WIB" duration-ms="6439" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.runners.CucumberRunner@5b251fb9]" started-at="2025-05-31T11:55:13 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-31T11:55:14 WIB" duration-ms="1330" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Delete a deleted object"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Delete Object via API with authentication"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- searchProduct -->
+        <test-method signature="addProductToCartFromList()[pri:3, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:44 WIB" name="addProductToCartFromList" finished-at="2025-06-16T17:07:47 WIB" duration-ms="3173" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.runners.CucumberRunner@5b251fb9]" started-at="2025-05-31T11:55:14 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-31T11:55:16 WIB" duration-ms="1414" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Update an existing Object with valid data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Update Object via API with authentication"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- addProductToCartFromList -->
+        <test-method signature="viewCart()[pri:4, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:47 WIB" name="viewCart" finished-at="2025-06-16T17:07:50 WIB" duration-ms="3416" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.runners.CucumberRunner@5b251fb9]" started-at="2025-05-31T11:55:16 WIB" name="tearDownClass" finished-at="2025-05-31T11:55:16 WIB" duration-ms="52" status="PASS">
+        </test-method> <!-- viewCart -->
+        <test-method signature="proceedToCheckoutWithoutCoupon()[pri:5, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:50 WIB" name="proceedToCheckoutWithoutCoupon" finished-at="2025-06-16T17:07:58 WIB" duration-ms="7450" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.runners.CucumberRunner -->
-    </test> <!-- Cucumber -->
-  </suite> <!-- CucumberSuite -->
+        </test-method> <!-- proceedToCheckoutWithoutCoupon -->
+        <test-method signature="validateOrderSuccess()[pri:6, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:58 WIB" name="validateOrderSuccess" finished-at="2025-06-16T17:07:58 WIB" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOrderSuccess -->
+      </class> <!-- selenium_e2e.CheckoutFlowE2E -->
+    </test> <!-- SeleniumSuite -->
+  </suite> <!-- SeleniumSuite -->
 </testng-results>
