@@ -8,6 +8,7 @@ C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\cucumber\
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\cucumber\TestContext.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\data\Product.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\helper\ConfigManager.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\helper\GenerateReport.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\restassured\RestAssuredImplement.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\restassured\RestAssuredWithAnnotations.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\retry_mechanism\RetrySample.java
@@ -19,6 +20,8 @@ C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\pojo\StaticVar.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\RegisterUserE2E.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\scenario_e2e\RestAssuredE2E.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\selenium\Locator.java
+C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\selenium_e2e\CheckoutFlowE2E.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\testng\AssertTest.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\testng\DataProviderTest.java
 C:\Users\Maxxi\maven-project\afteroffice-selenium\testng\src\test\java\testng\RetryTest.java
