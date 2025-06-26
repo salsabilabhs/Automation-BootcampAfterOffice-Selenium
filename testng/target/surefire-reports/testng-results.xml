@@ -1,41 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-16T17:07:36 WIB" name="SeleniumSuite" finished-at="2025-06-16T17:07:58 WIB" duration-ms="22000">
+  <suite started-at="2025-06-26T23:32:39 WIB" name="RunnerRegresionCucumber" finished-at="2025-06-26T23:33:04 WIB" duration-ms="25048">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:selenium_page_factory.test_suites_cucumber.runners.CucumberRunnerUI@195113de]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-06-16T17:07:36 WIB" name="SeleniumSuite" finished-at="2025-06-16T17:07:58 WIB" duration-ms="22000">
-      <class name="selenium_e2e.CheckoutFlowE2E">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:32 WIB" name="startBrowser" finished-at="2025-06-16T17:07:36 WIB" duration-ms="4389" status="PASS">
+    <test started-at="2025-06-26T23:32:39 WIB" name="RunnerRegresionCucumber" finished-at="2025-06-26T23:33:04 WIB" duration-ms="25048">
+      <class name="selenium_page_factory.test_suites_cucumber.runners.CucumberRunnerUI">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:selenium_page_factory.test_suites_cucumber.runners.CucumberRunnerUI@195113de]" started-at="2025-06-26T23:32:39 WIB" name="setUpClass" finished-at="2025-06-26T23:32:40 WIB" duration-ms="724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@79d63a4f]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method signature="loginToPlatform()[pri:0, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:36 WIB" name="loginToPlatform" finished-at="2025-06-16T17:07:37 WIB" duration-ms="1172" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:selenium_page_factory.test_suites_cucumber.runners.CucumberRunnerUI@195113de]" started-at="2025-06-26T23:32:40 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-26T23:33:04 WIB" duration-ms="24185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout Product E2E"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToPlatform -->
-        <test-method signature="searchProduct()[pri:2, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:37 WIB" name="searchProduct" finished-at="2025-06-16T17:07:44 WIB" duration-ms="6439" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:selenium_page_factory.test_suites_cucumber.runners.CucumberRunnerUI@195113de]" started-at="2025-06-26T23:33:04 WIB" name="tearDownClass" finished-at="2025-06-26T23:33:04 WIB" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProduct -->
-        <test-method signature="addProductToCartFromList()[pri:3, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:44 WIB" name="addProductToCartFromList" finished-at="2025-06-16T17:07:47 WIB" duration-ms="3173" status="PASS">
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="after_suite()[pri:0, instance:selenium_page_factory.test_suites_cucumber.runners.CucumberRunnerUI@195113de]" started-at="2025-06-26T23:33:04 WIB" name="after_suite" finished-at="2025-06-26T23:33:05 WIB" duration-ms="1298" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductToCartFromList -->
-        <test-method signature="viewCart()[pri:4, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:47 WIB" name="viewCart" finished-at="2025-06-16T17:07:50 WIB" duration-ms="3416" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewCart -->
-        <test-method signature="proceedToCheckoutWithoutCoupon()[pri:5, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:50 WIB" name="proceedToCheckoutWithoutCoupon" finished-at="2025-06-16T17:07:58 WIB" duration-ms="7450" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- proceedToCheckoutWithoutCoupon -->
-        <test-method signature="validateOrderSuccess()[pri:6, instance:selenium_e2e.CheckoutFlowE2E@c4d2c44]" started-at="2025-06-16T17:07:58 WIB" name="validateOrderSuccess" finished-at="2025-06-16T17:07:58 WIB" duration-ms="253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateOrderSuccess -->
-      </class> <!-- selenium_e2e.CheckoutFlowE2E -->
-    </test> <!-- SeleniumSuite -->
-  </suite> <!-- SeleniumSuite -->
+        </test-method> <!-- after_suite -->
+      </class> <!-- selenium_page_factory.test_suites_cucumber.runners.CucumberRunnerUI -->
+    </test> <!-- RunnerRegresionCucumber -->
+  </suite> <!-- RunnerRegresionCucumber -->
 </testng-results>
