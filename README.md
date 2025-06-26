@@ -3,8 +3,10 @@
 # WEEK 5 (TASK 5 PART 2) - Selenium UI Test E2E with Cucumber
 1. How to run the test?
     - Using Terminal write
-     ``` mvn test -DsuiteXml="src\test\resources\selenium_page_factory\runner_cucumber.xml" ```
-    ``` mvn test -DsuiteXml="src\test\resources\selenium_page_factory\runner_pom.xml" ```
+     ``` 
+     mvn test -DsuiteXml="src\test\resources\selenium_page_factory\runner_cucumber.xml" 
+     mvn test -DsuiteXml="src\test\resources\selenium_page_factory\runner_pom.xml" 
+     ```   
    - The result will be displaying on Terminal
 2. Location of the scripts :
    ```
